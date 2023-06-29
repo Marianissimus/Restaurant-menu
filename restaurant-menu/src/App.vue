@@ -1,18 +1,28 @@
 <template>
-  <img alt="logo" src="/favicon.png" id="logo">
-  <ShoppingCartDetails />
-  <Menu />
+  <img
+    alt="logo"
+    src="/favicon.png"
+    id="logo"
+    @click='store.setModeToMenu' />
+  <ShoppingCartDetails v-if="store.mode === 'cart'" />
+  <Menu v-else/>
 </template>
 
 <script>
 import Menu from '@/components/Menu.vue'
 import ShoppingCartDetails from '@/components/ShoppingCartDetails.vue'
+import { store } from '@/stores/mode.js'
 
 export default {
   name: 'App',
   components: {
     Menu,
     ShoppingCartDetails
+  },
+  setup() {
+    return {
+      store,
+    }
   }
 }
 </script>
@@ -74,4 +84,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* some global styles */
+button {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #A0334B;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  padding: .2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#logo {
+  cursor: pointer;
+}
+
 </style>

@@ -1,17 +1,15 @@
 <template>
-  <div class="shopping-cart">
+  <div class="shopping-cart" @click='store.setModeToCart'>
     Your cart
     <img src="@/assets/shoppingCart.svg" class="shopping-cart-img">
-    <div class="how-many-items">3</div>
+    <div class="how-many-items">{{ cart.howManyItems }}</div>
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    console.log('in here')
-  }
-}
+<script setup>
+import { useShoppingCart } from '@/stores/cart'
+import { store } from '@/stores/mode.js'
+const cart = useShoppingCart()
 </script>
 
 <style scoped>

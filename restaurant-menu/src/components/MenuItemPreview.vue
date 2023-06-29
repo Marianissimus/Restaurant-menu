@@ -13,20 +13,28 @@
       </div>
     </div>
     <div class="bottom">
-        <button>Add to cart</button>
+        <button @click="addToCart(item)">Add to cart</button>
     </div>
   </div>
 </template>
 
 <script>
 import { toRefs } from "vue"
+import { useShoppingCart } from '@/stores/cart'
 
 export default {
   props: ['currentItem'],
   setup(props) {
     const item = toRefs(props)
+    const cart = useShoppingCart()
+
+    function addToCart(item) {
+      cart.addToItems(item)
+    }
+
     return {
-      item: item.currentItem
+      item: item.currentItem,
+      addToCart,
     }
   }
 }
@@ -75,18 +83,6 @@ export default {
 
 .price {
   color: #DC6E79;
-}
-
-
-button {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  background-color: #A0334B;
-  color: #FFF;
-  border: none;
-  border-radius: 3px;
-  padding: .5em;
-  font-size: 1.2em;
-  cursor: pointer;
 }
 
 </style>
