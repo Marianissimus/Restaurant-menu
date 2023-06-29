@@ -1,5 +1,56 @@
 { "menu": [
     {
+      "id": 231,
+      "name": "Asparagus barbecue",
+      "description": "A most succulent barbecue complimented by our special sauce and fresh asparagus",
+      "price": 100,
+      "is_available": true,
+      "image": "asparagus_barbecue",
+      "rating": 2,
+      "type": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "Avocado delice",
+      "description": "Can we combine healthy, fresh ingredients in a deliciou meal? Yes, we can!",
+      "price": 23,
+      "is_available": true,
+      "image": "avocado_bread",
+      "rating": 4,
+      "type": [
+        "dinner",
+        "breakfast"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Brownie Cake",
+      "description": "Fresh from the oven, with a mixt of nuts and home made chocolate",
+      "price": 20,
+      "is_available": true,
+      "image": "brownie_cake",
+      "rating": 4,
+      "type": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": 234,
+      "name": "Burger",
+      "description": "You deserve to start your day in style with a savory burger and lightly crisp fries",
+      "price": 56,
+      "is_available": true,
+      "image": "burger",
+      "rating": 2,
+      "type": [
+        "breakfast"
+      ]
+    },
+    {
       "id": 122,
       "name": "Chicken",
       "description": "Farm chicken slowly roasted in wood oven with unique ingredients and formula to keep it juicy",
@@ -7,87 +58,22 @@
       "is_available": true,
       "image": "chicken",
       "rating": 3,
-      "type": ["lunch"]
-    },
-    {
-      "id": 12,
-      "name": "Brownie Cake",
-      "description": "Fresh from the oven, with a mixt of nuts and home made chocolate",
-      "price": 21,
-      "is_available": true,
-      "image": "brownie_cake",
-      "rating": 4,
-      "type": ["lunch", "dinner"]
-    },
-    {
-      "id": 231,
-      "name": "asparagus barbecue",
-      "description": "A most succulent barbecue complimented by our special sauce and fresh asparagus",
-      "price": 78,
-      "is_available": true,
-      "image": "asparagus_barbecue",
-      "rating": 2,
-      "type": ["lunch", "dinner"]
-    },
-    {
-      "id": 125,
-      "name": "avocado delice",
-      "description": "Can we combine healthy, fresh ingredients in a deliciou meal? Yes, we can!",
-      "price": 23,
-      "is_available": true,
-      "image": "avocado_bread",
-      "rating": 4,
-      "type": ["dinner", "breakfast"]
-    },
-    {
-      "id": 991,
-      "name": "White Princess",
-      "description": "Surprisingly fragrant vanilla, cream, lemon and cinammon fresh cake",
-      "price": 29,
-      "is_available": true,
-      "image": "baking_cake",
-      "rating": 5,
-      "type": ["dinner"]
-    },
-    {
-      "id": 828,
-      "name": "Obsession pasta",
-      "description": "Home made pasta with red cherry tomatoes, blue cheese, and green basil from our garden",
-      "price": 45,
-      "is_available": true,
-      "image": "basil_cheese",
-      "rating": 4,
-      "type": ["dinner", "breakfast"]
-    },
-    {
-      "id": 332,
-      "name": "Ribs",
-      "description": "Tender, juicy, flavoured, slowly cooked, surprising with every bite, perfect to savour in style",
-      "price": 65,
-      "is_available": true,
-      "image": "beef_ribs",
-      "rating": 4,
-      "type": ["dinner", "lunch"]
-    },
-    {
-      "id": 234,
-      "name": "burger",
-      "description": "You deserve to start your day in style with a savory burger and lightly crisp fries",
-      "price": 56,
-      "is_available": true,
-      "image": "burger",
-      "rating": 2,
-      "type": ["breakfast"]
+      "type": [
+        "lunch"
+      ]
     },
     {
       "id": 235,
-      "name": "doughnuts",
+      "name": "Doughnuts",
       "description": "An assortment of yummy, cream filled donuts ready to be shared or fought upon",
       "price": 24,
       "is_available": true,
       "image": "doughnuts",
       "rating": 4,
-      "type": ["dinner", "lunch"]
+      "type": [
+        "dinner",
+        "lunch"
+      ]
     },
     {
       "id": 236,
@@ -97,27 +83,72 @@
       "is_available": true,
       "image": "fish",
       "rating": 4,
-      "type": ["dinner"]
+      "type": [
+        "dinner"
+      ]
+    },
+    {
+      "id": 828,
+      "name": "Obsession pasta",
+      "description": "Home made pasta with red cherry tomatoes, blue cheese, and green basil from our garden",
+      "price": 45,
+      "is_available": true,
+      "image": "basil_cheese",
+      "rating": 4,
+      "type": [
+        "dinner",
+        "breakfast"
+      ]
     },
     {
       "id": 237,
-      "name": "pancakes",
+      "name": "Pancakes",
       "description": "Hard day ahead? Fill up your energy and good mood meter with hot, delicious pancakes ",
       "price": 22,
       "is_available": true,
       "image": "pancakes",
       "rating": 4,
-      "type": ["breakfast"]
+      "type": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": 332,
+      "name": "Ribs",
+      "description": "Tender, juicy, flavoured, slowly cooked, surprising with every bite, perfect to savour in style",
+      "price": 65,
+      "is_available": true,
+      "image": "beef_ribs",
+      "rating": 4,
+      "type": [
+        "dinner",
+        "lunch"
+      ]
     },
     {
       "id": 238,
-      "name": "salmon",
+      "name": "Salmon",
       "description": "When we serve it, be sure it's the freshiest, tastiest salmon you could get your hands on!",
       "price": 60,
       "is_available": true,
       "image": "salmon",
       "rating": 4,
-      "type": ["breakfast", "lunch"]
+      "type": [
+        "breakfast",
+        "lunch"
+      ]
+    },
+    {
+      "id": 991,
+      "name": "White Princess",
+      "description": "Surprisingly fragrant vanilla, cream, lemon and cinammon fresh cake",
+      "price": 29,
+      "is_available": true,
+      "image": "baking_cake",
+      "rating": 5,
+      "type": [
+        "dinner"
+      ]
     }
   ]
 }

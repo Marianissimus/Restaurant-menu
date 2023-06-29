@@ -32,7 +32,7 @@ export const useShoppingCart = defineStore('cart', {
           result.push(element)
         }
       }
-      return result.sort((a, b) => (a.name < b.name) ? 1 : -1)
+      return result.sort((a, b) => (a.name > b.name) ? 1 : -1)
     }
   },
 })

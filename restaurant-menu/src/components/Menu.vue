@@ -22,7 +22,7 @@ export default {
   },
   setup() {
     const items = menu.menu
-    const menuItems = ref(items);
+    const menuItems = ref(items)
     return {
       items: menuItems
     }
