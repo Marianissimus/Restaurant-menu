@@ -9,10 +9,12 @@ export const useShoppingCart = defineStore('cart', {
       this.items.push(item)
     },
     removeFromItems(item) {
-      console.log(item.id)
       const idx = this.items.findIndex(el => el.id === item.id)
       this.items.splice(idx, 1)
-    }
+    },
+    resetOrder() {
+      this.items = []
+    },
   },
   getters: {
     howManyItems: (state) => state.items.length,

@@ -58,8 +58,13 @@ export default {
   align-items: center;
 }
 
+.description {
+  padding-right: .3em;
+}
+
 .bottom {
   text-align: center;
+  padding-top: 1em;
 }
 
 .top, .bottom {

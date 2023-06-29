@@ -1,9 +1,11 @@
 <template>
-  <img
-    alt="logo"
-    src="/favicon.png"
-    id="logo"
-    @click='store.setModeToMenu' />
+  <div class="logo-container">
+    <img
+      alt="logo"
+      src="/favicon.png"
+      id="logo"
+      @click='store.setModeToMenu' />
+  </div>
   <ShoppingCartDetails v-if="store.mode === 'cart'" />
   <Menu v-else/>
 </template>
@@ -33,6 +35,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  overflow: hidden;
 }
 #logo {
   height: 100px;
@@ -92,9 +95,13 @@ button {
   color: #FFF;
   border: none;
   border-radius: 3px;
-  padding: .2em;
+  padding: .3em;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+.logo-container {
+  width: 100vw;
 }
 
 #logo {

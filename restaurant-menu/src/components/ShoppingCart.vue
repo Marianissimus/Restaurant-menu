@@ -2,7 +2,9 @@
   <div class="shopping-cart" @click='store.setModeToCart'>
     Your cart
     <img src="@/assets/shoppingCart.svg" class="shopping-cart-img">
-    <div class="how-many-items">{{ cart.howManyItems }}</div>
+    <div class="how-many-items">
+      <span>{{ cart.howManyItems }}</span>
+    </div>
   </div>
 </template>
 
