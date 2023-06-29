@@ -100,14 +100,6 @@ button {
   cursor: pointer;
 }
 
-.square {
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .logo-container {
   width: 100vw;
 }

@@ -1,15 +1,28 @@
 <template>
   <div class="shopping-cart-details">
+    <button v-if="cart.items.length" class="back-to-menu-btn" @click='store.setModeToMenu'>Back to menu</button>
     <table class="items-in-cart" v-if="cart.items.length">
       <tbody>
-        <tr v-for="(item, index) in cart.items" :key="index" class="item-row">
+        <tr v-for="(item, index) in cart.groupedMenuItems" :key="index" class="item-row">
           <td class="item-img">
             <img :src="require(`@/assets/menu/${item.image}_sm.jpg`)"  />
           </td>
           <td class="item-name">{{ item.name }}</td>
-          <td class="item-price">{{ item.price }} lei</td>
+          <td class="item-price">
+            <div class="item-price-inside">
+              <span>{{ item.price }}</span>
+              <span v-if="item.times > 1">&nbsp;X&nbsp;{{ item.times }}</span>
+             </div>
+            <div v-if="item.times > 1" class="total">{{ item.times * item.price }}</div>
+          </td>
           <td class="remove-item">
-            <button class="square" @click="removeFromCart(item)">X</button>
+            <button class="square" @click="removeFromCart(item)">
+              <span v-if="item.times > 1">-1</span>
+              <span v-else class="delete-symbol">&#128465;</span>
+            </button>
+            <button class="square" @click="addToCart(item)">
+              <span>+1</span>
+            </button>
           </td>
         </tr>
         <tr class="item-row">
@@ -34,6 +47,10 @@ const cart = useShoppingCart()
 
 function removeFromCart(item) {
   cart.removeFromItems(item)
+}
+
+function addToCart(item) {
+  cart.addToItems(item)
 }
 
 function order() {
@@ -71,6 +88,40 @@ function order() {
 
 .item-img img {
   height: 100px;
+}
+
+.item-name {
+  text-transform: capitalize;
+}
+
+.total {
+  border-top: 1px dashed #DC6E79;
+  padding-top: .4em;
+}
+
+.item-price-inside {
+  padding-bottom: .4em;
+}
+
+.remove-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+}
+
+.delete-symbol {
+  font-size: 1.3em;
+  position: relative;
+  top: -2px;
+}
+
+.back-to-menu-btn {
+  margin: 1em auto;
 }
 
 </style>
