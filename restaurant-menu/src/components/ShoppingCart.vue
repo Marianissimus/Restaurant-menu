@@ -1,6 +1,7 @@
 <template>
   <div class="shopping-cart" @click='store.setModeToCart'>
-    Your cart
+    <span v-if="cart.howManyItems > 0">Click to order</span>
+    <span v-else>Empty cart</span>
     <img src="@/assets/shoppingCart.svg" class="shopping-cart-img">
     <div class="how-many-items">
       <span>{{ cart.howManyItems }}</span>

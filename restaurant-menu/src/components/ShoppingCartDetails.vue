@@ -8,8 +8,8 @@
           </td>
           <td class="item-name">{{ item.name }}</td>
           <td class="item-price">{{ item.price }} lei</td>
-          <td>
-            <button @click="removeFromCart(item)">X</button>
+          <td class="remove-item">
+            <button class="square" @click="removeFromCart(item)">X</button>
           </td>
         </tr>
         <tr class="item-row">
