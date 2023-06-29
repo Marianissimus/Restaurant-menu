@@ -1,7 +1,6 @@
 <template>
   <div class="menu">
-    <h1>{{ msg }}</h1>
-    <ul>
+    <ul class="menu-list">
       <li v-for="item in items" :key="item.id">
         <MenuItemPreview :currentItem="item" />
       </li>
@@ -27,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .menu-list {
+    list-style-type: none;
+  }
+</style>
