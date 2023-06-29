@@ -1,15 +1,18 @@
 <template>
   <img alt="logo" src="/favicon.png" id="logo">
+  <ShoppingCartDetails />
   <Menu />
 </template>
 
 <script>
 import Menu from '@/components/Menu.vue'
+import ShoppingCartDetails from '@/components/ShoppingCartDetails.vue'
 
 export default {
   name: 'App',
   components: {
-    Menu
+    Menu,
+    ShoppingCartDetails
   }
 }
 </script>
