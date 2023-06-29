@@ -1,8 +1,8 @@
 <template>
   <div class="menu-preview">
     <h1 class="top">
-      <span>{{ item.name }}&nbsp;</span>
-      <span>{{ item.rating }}</span>
+      <div class="name">{{ item.name }}</div>
+      <div class="price">{{ item.price }}&nbsp;lei</div>
     </h1>
     <div class="content">
       <div class="description">
@@ -13,7 +13,6 @@
       </div>
     </div>
     <div class="bottom">
-        <div class="price">{{ item.price }}&nbsp;lei</div>
         <button>Add to cart</button>
     </div>
   </div>
@@ -38,25 +37,56 @@ export default {
 .menu-preview {
   width: 80vw;
   margin: 1em auto;
+  padding: 1em;
   display: flex;
-  border: 1px solid red;
+  border: 1px solid #DC6E79;
   flex-direction: column;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.content, .bottom {
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.bottom {
+  text-align: center;
+}
+
+.top, .bottom {
+  height: 50px;
+}
+
 .menu-image img {
   width: 250px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .top {
-  color: #A0334B;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
   text-transform: capitalize;
-  padding: .4em;
+  color: #A0334B;
+}
+
+.price {
+  color: #DC6E79;
+}
+
+
+button {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #A0334B;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  padding: .5em;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 </style>
