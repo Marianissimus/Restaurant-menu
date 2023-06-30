@@ -39,6 +39,7 @@ export default {
 }
 #logo {
   height: 100px;
+  margin-top: 1em;
 }
 /* css reset; modified for own needs
 /* http://meyerweb.com/eric/tools/css/reset/

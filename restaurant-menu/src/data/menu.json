@@ -1,7 +1,7 @@
 { "menu": [
     {
       "id": 231,
-      "name": "Asparagus barbecue",
+      "name": "Asparagus Barbecue",
       "description": "A most succulent barbecue complimented by our special sauce and fresh asparagus",
       "price": 100,
       "is_available": true,
@@ -14,7 +14,7 @@
     },
     {
       "id": 125,
-      "name": "Avocado delice",
+      "name": "Avocado Delice",
       "description": "Can we combine healthy, fresh ingredients in a deliciou meal? Yes, we can!",
       "price": 23,
       "is_available": true,
@@ -77,7 +77,7 @@
     },
     {
       "id": 236,
-      "name": "Fillet of fish",
+      "name": "Fillet Of Fish",
       "description": "The taste to refresh your pallate and fill your heart with joy for a lovely evening",
       "price": 49,
       "is_available": true,
@@ -89,7 +89,7 @@
     },
     {
       "id": 828,
-      "name": "Obsession pasta",
+      "name": "Obsession Pasta",
       "description": "Home made pasta with red cherry tomatoes, blue cheese, and green basil from our garden",
       "price": 45,
       "is_available": true,

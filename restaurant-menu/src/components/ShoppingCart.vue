@@ -3,7 +3,7 @@
     <span v-if="cart.howManyItems > 0">Click to order</span>
     <span v-else>Empty cart</span>
     <img src="@/assets/shoppingCart.svg" class="shopping-cart-img">
-    <div class="how-many-items">
+    <div id="how-many-items">
       <span>{{ cart.howManyItems }}</span>
     </div>
   </div>
@@ -36,7 +36,7 @@ const cart = useShoppingCart()
   transform: translate(-50%, -50%);
 }
 
-.how-many-items {
+#how-many-items {
   position: absolute;
   position: absolute;
   top: 40%;

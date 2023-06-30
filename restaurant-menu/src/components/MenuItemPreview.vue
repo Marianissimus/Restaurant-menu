@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="bottom">
-        <button @click="addToCart(item)">Add to cart</button>
+      <button class="add-to-cart" @click="addToCart(item)">Add to cart</button>
     </div>
   </div>
 </template>
