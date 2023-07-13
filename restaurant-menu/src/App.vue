@@ -2,7 +2,7 @@
   <div class="logo-container">
     <img
       alt="logo"
-      src="/favicon.png"
+      :src="require(`@/assets/logo.png`)"
       id="logo"
       @click='store.setModeToMenu' />
   </div>
