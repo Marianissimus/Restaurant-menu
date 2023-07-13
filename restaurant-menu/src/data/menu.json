@@ -1,7 +1,7 @@
 { "menu": [
     {
       "id": 231,
-      "name": "Asparagus Barbecue",
+      "name": "Asparagus BBQ",
       "description": "A most succulent barbecue complimented by our special sauce and fresh asparagus",
       "price": 100,
       "is_available": true,
