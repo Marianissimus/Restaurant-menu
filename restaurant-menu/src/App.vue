@@ -1,13 +1,15 @@
 <template>
-  <div class="logo-container">
-    <img
-      alt="logo"
-      :src="require(`@/assets/logo.png`)"
-      id="logo"
-      @click='store.setModeToMenu' />
+  <div>
+    <div class="logo-container">
+      <img
+        alt="logo"
+        :src="require(`@/assets/logo.png`)"
+        id="logo"
+        @click='store.setModeToMenu' />
+    </div>
+    <ShoppingCartDetails v-if="store.mode === 'cart'" />
+    <Menu v-else/>
   </div>
-  <ShoppingCartDetails v-if="store.mode === 'cart'" />
-  <Menu v-else/>
 </template>
 
 <script>
