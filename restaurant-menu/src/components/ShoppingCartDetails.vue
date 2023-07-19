@@ -3,7 +3,7 @@
     <button v-if="cart.items.length" class="back-to-menu-btn" @click='store.setModeToMenu'>Back to menu</button>
     <table class="items-in-cart" v-if="cart.items.length">
       <tbody>
-        <tr v-for="(item, index) in cart.groupedMenuItems" :key="index" class="item-row" :class="`${item.name.slice(0, item.name.indexOf(' '))}-tr`">
+        <tr v-for="(item, index) in cart.groupedMenuItems" :key="index" class="item-row" :data-cy="`${item.name.slice(0, item.name.indexOf(' '))}-tr`">
           <ShoppingCartDetailsItem :item="item"/>
         </tr>
         <tr class="item-row total-row">

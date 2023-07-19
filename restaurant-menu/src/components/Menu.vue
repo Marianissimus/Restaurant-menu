@@ -2,7 +2,7 @@
   <ShoppingCart />
   <div class="menu">
     <ul class="menu-list">
-      <li v-for="item in items" :key="item.id" :class="`${item.name.slice(0, item.name.indexOf(' '))}-container`">
+      <li v-for="item in items" :key="item.id" :data-cy="`${item.name.slice(0, item.name.indexOf(' '))}-container`">
         <MenuItemPreview :currentItem="item" />
       </li>
     </ul>

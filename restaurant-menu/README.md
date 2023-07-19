@@ -1,5 +1,12 @@
 # restaurant-menu
 
+## Run e2e tests
+
+```
+cd restaurant-menu
+npx cypress open
+```
+
 ## Project setup
 ```
 npm install
